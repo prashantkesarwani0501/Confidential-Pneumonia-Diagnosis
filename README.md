@@ -1,5 +1,3 @@
----
-
 ## 🔬 Privacy-Preserving Pneumonia Detection from Chest X-rays  
 
 > 📄 **Accepted at IC3 Conference 2025** 🎉  
@@ -71,4 +69,4 @@ This work offers:
 
 ---
 
-✨ *This project combines the fields of **Healthcare AI, Federated Learning, and Differential Privacy**, aiming to make diagnostic systems both **powerful and trustworthy.***  
+✨ *This project combines the fields of **Healthcare AI, Federated Learning, and Differential Privacy**, aiming to make diagnostic systems both **powerful and trustworthy.***

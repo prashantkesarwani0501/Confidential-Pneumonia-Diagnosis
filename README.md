@@ -2,37 +2,46 @@
 
 ## 🔬 Privacy-Preserving Pneumonia Detection from Chest X-rays  
 
-### 📌 Summary  
-This research presents a **comparative analysis of privacy-preserving techniques** for pneumonia detection using chest X-ray images.  
-We evaluated **Differential Privacy (Gaussian & Laplace), Federated Learning, Pixelation**, and a **novel hybrid approach** against a baseline CNN model using the **Kaggle Chest X-Ray dataset (5,856 images)**.  
-
-The work highlights the **trade-off between diagnostic accuracy and patient data privacy**, providing practical guidelines for building **privacy-preserving medical AI systems** while addressing compliance requirements such as **HIPAA**.  
+> 📄 **Accepted at IC3 Conference 2025** 🎉  
+> Research on **AI-driven pneumonia detection** while ensuring **patient data privacy**.  
 
 ---
 
-### 🔑 Key Findings  
-- ✅ **Federated Learning** achieved the highest accuracy (**85.90%**) with decentralized training.  
-- ✅ **Gaussian Differential Privacy** offered the best privacy–utility balance (**83.17% accuracy, 94.10% recall**).  
-- ✅ Privacy budget analysis identified an optimal range of **ε ∈ [2.0, 4.0]** for DP.  
-- ⚠️ Hybrid approaches (**FL + DP**) introduced excessive complexity, reducing performance significantly.  
+### 📌 Overview  
+This work provides a **comparative analysis of privacy-preserving techniques** applied to **chest X-ray pneumonia detection**.  
+We explored:  
+- 🧩 **Federated Learning (FL)**  
+- 🔒 **Differential Privacy (DP – Gaussian & Laplace)**  
+- 🖼️ **Pixelation**  
+- ⚡ **Hybrid FL + DP approaches**  
+
+Our goal was to study the **privacy–utility trade-off**, ensuring compliance with **healthcare privacy laws (HIPAA)** while maintaining **diagnostic accuracy**.  
+
+---
+
+### 🔑 Key Insights  
+✔️ **Federated Learning** delivered the highest accuracy (**85.90%**) using decentralized training  
+✔️ **Gaussian DP** achieved the best privacy–utility balance (**83.17% accuracy, 94.10% recall**)  
+✔️ Optimal **privacy budget range:** `ε ∈ [2.0, 4.0]`  
+⚠️ Hybrid models (**FL + DP**) introduced too much complexity, reducing performance  
 
 ---
 
 ### 📊 Results  
 
-#### **Model Performance Comparison**
+#### 🏥 Model Performance Comparison
 | Method              | Test Accuracy (%) | Precision (%) | Recall (%) | F1 Score (%) |
 |---------------------|------------------:|--------------:|-----------:|-------------:|
-| Baseline CNN        | 81.89             | 78.55         | 97.69      | 87.08        |
-| Federated Learning  | **85.90**         | **88.16**     | 85.90      | 85.05        |
-| Gaussian DP         | 83.17             | 81.74         | **94.10**  | **87.49**    |
+| Baseline CNN        | 81.89             | 78.55         | **97.69**  | 87.08        |
+| **Federated Learning**  | **85.90**         | **88.16**     | 85.90      | 85.05        |
+| **Gaussian DP**     | 83.17             | 81.74         | 94.10      | **87.49**    |
 | Laplace DP          | 62.02             | 62.77         | 96.41      | 76.03        |
 | Pixelation          | 57.15             | 52.00         | 87.46      | 65.20        |
 | FL + DP Hybrid      | 37.50             | 18.75         | 50.00      | 27.27        |
 
 ---
 
-#### **Dataset Distribution**
+#### 📂 Dataset Distribution
 | Category   | Training | Validation | Test | Total |
 |------------|---------:|-----------:|-----:|------:|
 | Normal     | 1,341    | 8          | 234  | 1,721 |
@@ -41,7 +50,7 @@ The work highlights the **trade-off between diagnostic accuracy and patient data
 
 ---
 
-#### **Privacy Budget Analysis (Differential Privacy)**
+#### 🔐 Privacy Budget Analysis (DP)
 | Privacy Budget (ε) | Gaussian DP Accuracy (%) | Laplace DP Accuracy (%) |
 |--------------------|-------------------------:|------------------------:|
 | 0.1                | 52.3                    | 45.1                   |
@@ -54,7 +63,12 @@ The work highlights the **trade-off between diagnostic accuracy and patient data
 
 ---
 
-📄 **Research Paper Accepted at IC3 Conference 2025** 🎉  
-This project contributes to advancing **Privacy-Preserving AI in Healthcare**, enabling diagnostic systems that are both **powerful and secure**.  
+### 🏆 Contribution to Research  
+This work offers:  
+- Practical guidelines for **designing privacy-preserving medical AI systems**  
+- Benchmarking results to balance **accuracy vs. privacy**  
+- Insights into **real-world deployment under HIPAA compliance**  
 
 ---
+
+✨ *This project combines the fields of **Healthcare AI, Federated Learning, and Differential Privacy**, aiming to make diagnostic systems both **powerful and trustworthy.***  
